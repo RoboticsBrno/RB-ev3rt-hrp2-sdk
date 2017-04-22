@@ -9,6 +9,9 @@ var NAVTREE =
         [ "全て", "functions.html", null ],
         [ "変数", "functions_vars.html", null ]
       ] ]
+    ] ],
+    [ "ファイル", null, [
+      [ "ファイル一覧", "files.html", "files" ]
     ] ]
   ] ]
 ];

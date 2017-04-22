@@ -106,7 +106,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A memory file is a file stored in RAM rather than on the SD card.  <a href="structmemfile__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfileinfo__t.html">fileinfo_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A memory file is a file stored in RAM rather than on the SD card.  <a href="structfileinfo__t.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure of file information.  <a href="structfileinfo__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -135,7 +135,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga532e8cc92304f0101e0deeb6cd9fadbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a directory for reading.  <a href="#ga532e8cc92304f0101e0deeb6cd9fadbf">More...</a><br/></td></tr>
 <tr class="separator:ga532e8cc92304f0101e0deeb6cd9fadbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8baeceaf1dc86c7e9d1a5dbdbd80e34b"><td class="memItemLeft" align="right" valign="top">ER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ev3api-fs.html#ga8baeceaf1dc86c7e9d1a5dbdbd80e34b">ev3_sdcard_readdir</a> (ID dirid, <a class="el" href="structfileinfo__t.html">fileinfo_t</a> *p_fileinfo)</td></tr>
-<tr class="memdesc:ga8baeceaf1dc86c7e9d1a5dbdbd80e34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a directory.  <a href="#ga8baeceaf1dc86c7e9d1a5dbdbd80e34b">More...</a><br/></td></tr>
+<tr class="memdesc:ga8baeceaf1dc86c7e9d1a5dbdbd80e34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read file information in the directory.  <a href="#ga8baeceaf1dc86c7e9d1a5dbdbd80e34b">More...</a><br/></td></tr>
 <tr class="separator:ga8baeceaf1dc86c7e9d1a5dbdbd80e34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffdeffb3f095a47382d48a352cd2472a"><td class="memItemLeft" align="right" valign="top">ER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ev3api-fs.html#gaffdeffb3f095a47382d48a352cd2472a">ev3_sdcard_closedir</a> (ID dirid)</td></tr>
 <tr class="memdesc:gaffdeffb3f095a47382d48a352cd2472a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a directory.  <a href="#gaffdeffb3f095a47382d48a352cd2472a">More...</a><br/></td></tr>
@@ -144,7 +144,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaa75435a927bdaa6b1b6209b990a2cda1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a memory file and load a specific file into it from the SD card.  <a href="#gaa75435a927bdaa6b1b6209b990a2cda1">More...</a><br/></td></tr>
 <tr class="separator:gaa75435a927bdaa6b1b6209b990a2cda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e92f18ee9f6b9875c0191a777983570"><td class="memItemLeft" align="right" valign="top">ER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ev3api-fs.html#ga7e92f18ee9f6b9875c0191a777983570">ev3_memfile_free</a> (<a class="el" href="structmemfile__t.html">memfile_t</a> *p_memfile)</td></tr>
-<tr class="memdesc:ga7e92f18ee9f6b9875c0191a777983570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the resource (memory) allocated to a memory file. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL on success.  <a href="#ga7e92f18ee9f6b9875c0191a777983570">More...</a><br/></td></tr>
+<tr class="memdesc:ga7e92f18ee9f6b9875c0191a777983570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the resource (memory) allocated to a memory file.  <a href="#ga7e92f18ee9f6b9875c0191a777983570">More...</a><br/></td></tr>
 <tr class="separator:ga7e92f18ee9f6b9875c0191a777983570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac019d412e55aa7e82791ef708cec551"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ev3api-fs.html#gaac019d412e55aa7e82791ef708cec551">ev3_serial_open_file</a> (<a class="el" href="group__ev3api-fs.html#gadfc0b70260f2ffd57afd8229806bd6bc">serial_port_t</a> port)</td></tr>
 <tr class="memdesc:gaac019d412e55aa7e82791ef708cec551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the serial port as a file.  <a href="#gaac019d412e55aa7e82791ef708cec551">More...</a><br/></td></tr>
@@ -221,18 +221,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free the resource (memory) allocated to a memory file. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL on success. </p>
-<p>[TODO: sync with jp version] </p>
+<p>Free the resource (memory) allocated to a memory file. </p>
+<p>The <em>buffer</em> of <em>p_memfile</em> will be set to NULL on success. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_memfile</td><td>Pointer of a memory file </td></tr>
+    <tr><td class="paramname">p_memfile</td><td>Pointer of a memory file to release </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">E_OK</td><td>Success </td></tr>
-    <tr><td class="paramname">E_PAR</td><td>The <em>p_memfile</em> is NULL. </td></tr>
+    <tr><td class="paramname">E_PAR</td><td>The <em>p_memfile</em> is NULL. [TODO: check - inconsistent with Jp version -&gt; E_MACV] </td></tr>
     <tr><td class="paramname">E_OBJ</td><td>The <em>p_memfile</em> does not point to a valid memory file. </td></tr>
   </table>
   </dd>
@@ -265,7 +265,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a memory file and load a specific file into it from the SD card. </p>
-<p>[TODO: sync with jp version] </p>
+<p>Generates an object of the memory file and reads the specified file from the SD card into this memory file. If an error occurs , clear buffer in <em>p_memfile</em> to <em>NULL</em>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path of the file to be loaded </td></tr>
@@ -276,9 +276,10 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">E_OK</td><td>Success </td></tr>
+    <tr><td class="paramname">E_MACV</td><td>Memory access violation (path or p_memfile) </td></tr>
     <tr><td class="paramname">E_NOMEM</td><td>No enough free memory to create the memory file, or <em>p_memfile</em> is NULL. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL if this happens. </td></tr>
     <tr><td class="paramname">E_PAR</td><td>The <em>path</em> does not point to a valid file. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL if this happens. </td></tr>
-    <tr><td class="paramname">E_OBJ</td><td>I/O failure, which might be caused by a corrupted SD card. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL if this happens. </td></tr>
+    <tr><td class="paramname">E_SYS</td><td>I/O failure, which might be caused by a corrupted SD card. The <em>buffer</em> of <em>p_memfile</em> will be set to NULL if this happens. </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,7 +304,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close a directory. </p>
-<p>[TODO: sync with jp version] </p>
+<p>If it succeeds, it releases the resource of the opened directory, and its ID can not be used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dirid</td><td>ID of an opened directory </td></tr>
@@ -313,6 +314,9 @@ Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">E_OK</td><td>Success </td></tr>
+    <tr><td class="paramname">E_CTX</td><td>Call from non-task contest </td></tr>
+    <tr><td class="paramname">E_ID</td><td>Invalid ID number </td></tr>
+    <tr><td class="paramname">E_SYS</td><td>I/O error occurred (High possibility of SD card failure) </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,21 +331,31 @@ Functions</h2></td></tr>
           <td class="memname">ER_ID ev3_sdcard_opendir </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Open a directory for reading. </p>
-<p>[TODO: sync with jp version] </p>
+<p>If it succeeds, it returns the ID of the opened directory as a return value. This ID can be used to obtain file information in the directory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path of the directory to be opened </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ID of the opened directory</dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>ID of the opened directory </td></tr>
+    <tr><td class="paramname">E_CTX</td><td>Call from non-task contest </td></tr>
+    <tr><td class="paramname">E_MACV</td><td>Memory access violation (path) </td></tr>
+    <tr><td class="paramname">E_NOID</td><td>Insufficient ID number </td></tr>
+    <tr><td class="paramname">E_PAR</td><td>Invalid path name </td></tr>
+    <tr><td class="paramname">E_SYS</td><td>I/O error occurred (High possibility of SD card failure)</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>dirent.h </p>
 
 </div>
@@ -370,17 +384,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Close a directory. </p>
-<p>[TODO: sync with jp version] </p>
+<p>Read file information in the directory. </p>
+<p>Return information on the next file from the opened directory. [TODO: check] </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dirid</td><td>ID of an opened directory </td></tr>
+    <tr><td class="paramname">p_fileinfo</td><td>Pointer to structure with information of storing file [TODO: check]. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">E_OK</td><td>Success </td></tr>
+    <tr><td class="paramname">E_CTX</td><td>Call from non-task contest </td></tr>
+    <tr><td class="paramname">E_ID</td><td>Invalid ID number </td></tr>
+    <tr><td class="paramname">E_MACV</td><td>Memory access violation (p_fileinfo) </td></tr>
+    <tr><td class="paramname">E_OBJ</td><td>There is no information on files that can be read any more </td></tr>
+    <tr><td class="paramname">E_SYS</td><td>I/O error occurred (High possibility of SD card failure) </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,7 +438,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 22 2017 17:36:21 for EV3RT C API Reference [English] by
+    <li class="footer">Generated on Sat Apr 22 2017 22:51:25 for EV3RT C API Reference [English] by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
