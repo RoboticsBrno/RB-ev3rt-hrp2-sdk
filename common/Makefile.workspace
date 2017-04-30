@@ -87,6 +87,14 @@ $(LIBKERNELDIR)/libkernel.a: prepare-obj-folder
 endif
 
 #
+# App output name
+#
+ifndef outname
+outname := app
+endif
+
+
+#
 # Target for an application module (dynamic)
 #
 ifdef app
@@ -98,12 +106,14 @@ app: $(APPLDIR) prepare-obj-folder
 	make module_cfg.h && \
 	make -j8 && \
 	cp app $(PWD)/app # && cp app $(PWD)/app-$(subst /,,$(app))
+	mv -f $(PWD)/app $(PWD)/$(outname) 
 
 endif
 
+
 usage:
 	@echo make img="<folder>"
-	@echo make app="<folder>"
+	@echo "make app=<folder> [outname=<required_app_file_name>]"
 	@echo "make upload [ip=<ev3_ip_address>] [from=<local_file_name>] [to=<remote_file_name>]"
 	@echo "make uploadimg [ip=<ev3_ip_address>] [from=<local_image_path>]"
 
