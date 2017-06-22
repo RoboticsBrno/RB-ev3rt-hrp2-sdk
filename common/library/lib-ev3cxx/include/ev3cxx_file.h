@@ -141,11 +141,20 @@ public:
 
     /**
      * \~English    
-     * \brief 	    Set position of stream to the beginning.
-     * \details     Vraper around standard function rewind(). Sets the position indicator associated with stream to the beginning of the file.
+     * \brief 	Set position of stream to the beginning.
+     * \details Wrapper around standard function rewind(). Sets the position indicator associated with stream to the beginning of the file.
      */
     void rewind() {
         ::rewind(m_filedesc);
+    }
+
+    /**
+     * \~English    
+     * \brief   Flush stream
+     * \details Save changes in the file.
+     */
+    void flush() {
+        fflush(m_filedesc);
     }
 
 protected:
