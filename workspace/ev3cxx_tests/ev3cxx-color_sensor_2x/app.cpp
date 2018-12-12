@@ -10,8 +10,8 @@
 #include "app.h"
 
 #define ATOMS_NO_EXCEPTION
-#include <atoms/communication/avakar.h>
-#include <atoms/numeric/rolling_average.h> 
+#include "avakar.h"
+#include "rolling_average.h" 
 
 using ev3cxx::display;
 using ev3cxx::format;
