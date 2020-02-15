@@ -5,4 +5,4 @@ repository RB-ev3rt-hrp2-sdk
 
 Status               | Platform
 --------------       | ------ 
-[![Build Status](https://travis-ci.org/RoboticsBrno/RB-ev3rt-hrp2-sdk.svg?branch=master)](https://travis-ci.org/RoboticsBrno/RB-ev3rt-hrp2-sdk) | Ubuntu 14.04
+[![Build Status](https://travis-ci.com/RoboticsBrno/RB-ev3rt-hrp2-sdk.svg?branch=master)](https://travis-ci.com/RoboticsBrno/RB-ev3rt-hrp2-sdk) | Ubuntu 14.04
